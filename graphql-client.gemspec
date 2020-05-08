@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 Gem::Specification.new do |s|
-  s.name = "graphql-client"
-  s.version = "0.16.0"
+  s.name = "graphql-client-jennius"
+  s.version = "0.16.1"
   s.summary = "GraphQL Client"
   s.description = "A Ruby library for declaring, composing and executing GraphQL queries"
-  s.homepage = "https://github.com/github/graphql-client"
+  s.homepage = "https://github.com/Enceradeira/graphql-client"
   s.license = "MIT"
 
   s.files = Dir["README.md", "LICENSE", "lib/**/*.rb"]
@@ -19,9 +19,12 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rake", "~> 11.2"
   s.add_development_dependency "rubocop-github", "~> 0.10"
   s.add_development_dependency "rubocop", "~> 0.55"
+  s.add_development_dependency "pry"
+  s.add_development_dependency "pry-byebug"
+  s.add_development_dependency "pry-doc"
 
   s.required_ruby_version = ">= 2.1.0"
 
-  s.email = "engineering@github.com"
-  s.authors = "GitHub"
+  s.authors       = ["Jorg Jenni"]
+  s.email         = ["jorg.jenni@jennius.co.uk"]
 end
